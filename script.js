@@ -20,10 +20,10 @@ async function getAllPosts(){
         const date = document.createElement("p");
         const link = document.createElement("a");
 
-        img.setAttribute("href", post.yoast_head_json.og_image[0].url)
+        img.setAttribute("src", post.yoast_head_json.og_image[0].url)
         title.innerText = post.title.rendered;
         date.innerText = post.date;
-        link.innerText = "Ler mais";
+        link.innerText = "Ler Mais";
         link.setAttribute("href", `https://one.blog.br/${post.slug}`);
 
 
